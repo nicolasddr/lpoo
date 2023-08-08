@@ -5,6 +5,7 @@ public class bee1020{
 		Scanner s = new Scanner(System.in);
 
 		int total = s.nextInt();
+		s.close();
 
 		int anos = total/365;
 		int resto = total%365;

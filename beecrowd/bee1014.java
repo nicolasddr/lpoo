@@ -6,6 +6,7 @@ public class bee1014{
 
 		int dist = s.nextInt();
 		double combust = s.nextDouble();
+		s.close();
 
 		double consumo = dist/combust;
 

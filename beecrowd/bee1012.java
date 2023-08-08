@@ -7,6 +7,8 @@ public class bee1012{
 		double b = s.nextDouble();
 		double c = s.nextDouble();
 
+		s.close();
+
 		double pi = 3.14159;
 
 		double area_tri_ret = (a*c)/2;

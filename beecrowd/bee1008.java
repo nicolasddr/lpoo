@@ -6,6 +6,8 @@ public class bee1008{
 		int num = s.nextInt();
 		int horas = s.nextInt();
 		double valor = s.nextDouble();
+		s.close();
+		
 		double salario = horas*valor;
 		System.out.println("NUMBER = " + num);
 		System.out.println(String.format("SALARY = U$ %.2f", salario));

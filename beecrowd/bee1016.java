@@ -5,7 +5,7 @@ public class bee1016{
 		Scanner s = new Scanner(System.in);
 
 		int dist = s.nextInt();
-
+		s.close();
 		int minutos = (60*dist)/30;
 
 		System.out.println(String.format("%d minutos", minutos));

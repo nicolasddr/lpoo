@@ -7,6 +7,7 @@ public class bee1007{
         int b = s.nextInt();
         int c = s.nextInt();
         int d = s.nextInt();
+        s.close();
         int dif = (a * b - c * d);
         System.out.println("DIFERENCA = " + dif);
     }
