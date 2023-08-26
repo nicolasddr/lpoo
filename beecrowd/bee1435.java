@@ -1,15 +1,17 @@
 
+import java.io.IOException;
+import java.lang.StringBuilder;
 import java.util.Scanner;
 
 public class bee1435{
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
         int x; 
 
         while(n > 0 && n <= 100){
-
+            StringBuilder sb = new StringBuilder();
             for(int l=1; l<=n; l++){
                 for(int c=1; c<=n; c++){
                     x = l;
@@ -26,18 +28,19 @@ public class bee1435{
                         x = n-c+1;
                     }
     
-                    System.out.printf("%3d", x);
+                    sb.append(String.format("%3d", x));
                     if(c<n){
-                        System.out.printf(" ");
+                        sb.append(" ");
                     } else {
-                        System.out.printf("\n");
+                        sb.append("\n");
                     }
                       
                 }   
                   
             }
 
-            System.out.print("\n");
+            sb.append("\n");
+            System.out.print(sb.toString());
             n = sc.nextInt();
 
         }
